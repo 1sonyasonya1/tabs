@@ -5,7 +5,7 @@
   }
 
 :root {
-    --purple: rgba(121, 73, 255, 1);
+    --purple: rgb(121, 73, 255);
     --black: rgba(0, 0, 0, 1);
     --white: rgba(255, 255, 255, 1);
     --background:rgb(211, 211, 211);
@@ -77,6 +77,10 @@ body {
     border-radius: 50%;
     background: url('img/check(2).svg') center / 13px 13px no-repeat;
     background-color: var(--black);
+}
+
+.tabs__item.done.active::after {
+    background-color: var(--purple);
 }
 
 .tabs__item.count {
